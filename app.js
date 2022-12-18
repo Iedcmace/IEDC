@@ -193,16 +193,25 @@ const preEvent = ()=> {
 let mId = document.getElementById("mNum");
 let m1 = document.getElementsByClassName("m1");
 let m2 = document.getElementsByClassName("m2");
+let m3 = document.getElementsByClassName("m3");
+let m4 = document.getElementsByClassName("m4");
+let m5 = document.getElementsByClassName("m5");
 
 const nextMember = ()=>{
-    if (Number(mId.textContent) === 2) {
-        return;
-    }
+    
+    if (Number(mId.textContent) === 1) {
     m1[0].style.display = 'none';
     m1[1].style.display = 'none';
+
     m2[0].style.display = 'flex';
     m2[1].style.display = 'flex';
-    mId.textContent = '02';
+    m3[0].style.display = 'none';
+    m3[1].style.display = 'none';
+    m4[0].style.display = 'none';
+    m4[1].style.display = 'none';
+    m5[0].style.display = 'none';
+    m5[1].style.display = 'none';
+        mId.textContent = '02';
     gsap.from(".memberList",{
         duration: 1,
         opacity: 0,
@@ -210,25 +219,187 @@ const nextMember = ()=>{
         ease: "power4",
         stagger: 0.1
     });
+       
+    }
+    else if (Number(mId.textContent) === 2) {
+        m1[0].style.display = 'none';
+        m1[1].style.display = 'none';
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m3[0].style.display = 'flex';
+        m3[1].style.display = 'flex';
+        m4[0].style.display = 'none';
+        m4[1].style.display = 'none';
+        m5[0].style.display = 'none';
+        m5[1].style.display = 'none';
+            mId.textContent = '03';
+        gsap.from(".memberList",{
+            duration: 1,
+            opacity: 0,
+            x: -100,
+            ease: "power4",
+            stagger: 0.1
+        });
+           
+    }
+    else if (Number(mId.textContent) === 3) {
+        m1[0].style.display = 'none';
+        m1[1].style.display = 'none';
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m3[0].style.display = 'none';
+        m3[1].style.display = 'none';
+        m4[0].style.display = 'flex';
+        m4[1].style.display = 'flex';
+        m5[0].style.display = 'none';
+        m5[1].style.display = 'none';
+            mId.textContent = '04';
+        gsap.from(".memberList",{
+            duration: 1,
+            opacity: 0,
+            x: -100,
+            ease: "power4",
+            stagger: 0.1
+        });
+           
+    }
+    else if (Number(mId.textContent) === 4) {
+        m1[0].style.display = 'none';
+        m1[1].style.display = 'none';
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m3[0].style.display = 'none';
+        m3[1].style.display = 'none';
+        m4[0].style.display = 'none';
+        m4[1].style.display = 'none';
+        m5[0].style.display = 'flex';
+        m5[1].style.display = 'flex';
+            mId.textContent = '05';
+        gsap.from(".memberList",{
+            duration: 1,
+            opacity: 0,
+            x: -100,
+            ease: "power4",
+            stagger: 0.1
+        });
+           
+    }
+    else if (Number(mId.textContent) === 5) {
+        m1[0].style.display = 'none';
+        m1[1].style.display = 'none';
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m3[0].style.display = 'none';
+        m3[1].style.display = 'none';
+        m4[0].style.display = 'none';
+        m4[1].style.display = 'none';
+        m5[0].style.display = 'flex';
+        m5[1].style.display = 'flex';
+        return;
+    }
+    
 };
+
 
 const preMember = ()=>{
     if (Number(mId.textContent) === 1) {
+        m5[0].style.display = 'none';
+        m5[1].style.display = 'none';
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m3[0].style.display = 'none';
+        m3[1].style.display = 'none';
+        m4[0].style.display = 'none';
+        m4[1].style.display = 'none';
+        m1[0].style.display = 'flex';
+        m1[1].style.display = 'flex';
         return;
     }
-    m2[0].style.display = 'none';
-    m2[1].style.display = 'none';
-    m1[0].style.display = 'flex';
-    m1[1].style.display = 'flex';
-    mId.textContent = '01';
-    gsap.from(".memberList",{
-        duration: 1,
-        opacity: 0,
-        x: 100,
-        ease: "power4",
-        stagger: 0.1
-    });
+    else if (Number(mId.textContent) === 2) {
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m1[0].style.display = 'flex';
+        m1[1].style.display = 'flex';
+        m3[0].style.display = 'none';
+    m3[1].style.display = 'none';
+    m4[0].style.display = 'none';
+    m4[1].style.display = 'none';
+    m5[0].style.display = 'none';
+    m5[1].style.display = 'none';
+        mId.textContent = '01';
+        gsap.from(".memberList",{
+            duration: 1,
+            opacity: 0,
+            x: 100,
+            ease: "power4",
+            stagger: 0.1
+        });
+    }
+    else if (Number(mId.textContent) === 3) {
+        m1[0].style.display = 'none';
+        m1[1].style.display = 'none';
+        m2[0].style.display = 'flex';
+        m2[1].style.display = 'flex';
+        m3[0].style.display = 'none';
+    m3[1].style.display = 'none';
+    m4[0].style.display = 'none';
+    m4[1].style.display = 'none';
+    m5[0].style.display = 'none';
+    m5[1].style.display = 'none';
+        mId.textContent = '02';
+        gsap.from(".memberList",{
+            duration: 1,
+            opacity: 0,
+            x: 100,
+            ease: "power4",
+            stagger: 0.1
+        });
+    }
+    else if (Number(mId.textContent) === 4) {
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m3[0].style.display = 'flex';
+        m3[1].style.display = 'flex';
+        m1[0].style.display = 'none';
+    m1[1].style.display = 'none';
+    m4[0].style.display = 'none';
+    m4[1].style.display = 'none';
+    m5[0].style.display = 'none';
+    m5[1].style.display = 'none';
+        mId.textContent = '03';
+        gsap.from(".memberList",{
+            duration: 1,
+            opacity: 0,
+            x: 100,
+            ease: "power4",
+            stagger: 0.1
+        });
+    }
+    else if (Number(mId.textContent) === 5) {
+        m2[0].style.display = 'none';
+        m2[1].style.display = 'none';
+        m4[0].style.display = 'flex';
+        m4[1].style.display = 'flex';
+        m3[0].style.display = 'none';
+    m3[1].style.display = 'none';
+    m1[0].style.display = 'none';
+    m1[1].style.display = 'none';
+    m5[0].style.display = 'none';
+    m5[1].style.display = 'none';
+        mId.textContent = '04';
+        gsap.from(".memberList",{
+            duration: 1,
+            opacity: 0,
+            x: 100,
+            ease: "power4",
+            stagger: 0.1
+        });
+    }
+   
 };
+
+
+
 
 const scrl = (tgt)=>{
     gsap.to(window,{

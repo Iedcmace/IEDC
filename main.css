@@ -352,6 +352,7 @@ background-color:#62606b;
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 8fr;
+    overflow-y: hidden;
 }
 .memberAbout{
     grid-column: 1/3;
@@ -360,6 +361,7 @@ background-color:#62606b;
     padding-top: 5vh;
     padding-left: 5vw;
     align-items: center;
+    
 }
 .memberAbout .nButton{
     margin-top: 0;
@@ -367,12 +369,14 @@ background-color:#62606b;
 .memberAbout text{
     color: #a0a0a0;
 }
+
 .memberList{
     padding-left: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 3vw;
+    
 }
 .m2{
     display: none;
